@@ -6,7 +6,8 @@
     width: 100%;
 }
 
-/* header */
+
+/* -------- header -------- */
 .header{
 position: absolute;
 width: 1440px;
@@ -17,8 +18,11 @@ top: 0px;
 background: #EDF2EC;
 }
 
-/* logo_vector */
-.logo_vector{
+.wrapper{}
+.header-wrapper{}
+
+
+.logo{
 position: absolute;
 width: 20px;
 height: 20px;
@@ -26,17 +30,7 @@ left: 111px;
 top: 52px;
 }
 
-/* navbar */
 .navbar{
-position: absolute;
-width: 1220px;
-height: 50px;
-left: 111px;
-top: 42px;
-}
-
-/* nav */
-.nav-list{
 position: absolute;
 width: 452px;
 height: 50px;
@@ -44,6 +38,11 @@ left: 879px;
 top: 42px;
 }
 
+.nav-link{}
+
+
+
+/* -------- welcome -------- */
 .welcome{
 position: absolute;
 width: 1440px;
@@ -90,6 +89,8 @@ top: 394px;
 }
 
 
+/* -------- about -------- */
+.about{}
 
 .about-wrap {
     display: flex;
@@ -115,7 +116,58 @@ top: 394px;
 }
 
 
-/* footer */
+/* -------- services -------- */
+
+.services{}
+.services-wrap{}
+.services-content{}
+.buttons-wrap{}
+
+.wrap-card{}
+.card{}
+.title-desc{}
+.title-card{}
+.disc-card{}
+
+
+
+/* -------- prices -------- */
+.prices{}
+.prices-wrap{}
+.prices-tarif{}
+.prices-title{}
+
+.accordeon{}
+.accordeon-wrap{}
+.accordeon-item{}
+.accordeon-item-title{}
+
+.accordeon-item-button{}
+
+.prices-contact{}
+
+
+/* -------- contacts -------- */
+.contacts{}
+.ontacts-wrap{}
+.city-list-wrap{}
+.city-list-elements{}
+.city-list-item{}
+.city-btn{}
+.city-list-open{}
+
+/*city-list-city*/
+.city-list-city{}
+.contact-info{}
+.contact-info-wrap{}
+.contact-info-item{}
+.contact-info-item-name{}
+.contact-info-item-prop{}
+
+.contact-info-button{}
+
+
+/* -------- footer -------- */
 .main-footer{
 position: absolute;
 width: 1440px;
@@ -125,3 +177,14 @@ top: 3740px;
 
 background: #FFFFFF;
 }
+
+.footer-wrap{}
+.footer-content{}
+.github{}
+.footer-school{}
+.name-school{}
+
+.social-media{}
+.social-media-list{}
+.ocial-media-item{}
+
