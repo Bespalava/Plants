@@ -1,3 +1,32 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  .header,
+  .welcome,
+  .service,
+  .contacts {
+    background-color: #EDF2EC;
+  }
+  
+  .wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+
+
+/*
+
 .main {
     display: flex;
     flex-direction: column;
@@ -5,7 +34,7 @@
     max-width: 700px;
     width: 100%;
 }
-
+*/
 
 /* -------- header -------- */
 .header{
@@ -18,9 +47,22 @@ top: 0px;
 background: #EDF2EC;
 }
 
-.wrapper{}
+
 .header-wrapper{}
 
+
+.navbar {
+    padding: 42px 110px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #010201;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 .logo{
 position: absolute;
@@ -30,29 +72,101 @@ left: 111px;
 top: 52px;
 }
 
-.navbar{
-position: absolute;
-width: 452px;
-height: 50px;
-left: 879px;
-top: 42px;
-}
 
-.nav-link{}
+  
 
+.burger-menu {
+    display: none;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 459px;
+  }
+  
+  .nav-link{
+    text-decoration: none;
+    color: #000000;
+  }
+  .link--active {
+    color: #E06733;
+  }
+
+  .nav-item {
+    margin: 11px 0 11px 10px ;
+    padding: 3px 0;
+    list-style: none;
+    position: relative;
+  }
 
 
 /* -------- welcome -------- */
-.welcome{
-position: absolute;
-width: 1440px;
-height: 532px;
-left: 0px;
-top: 134px;
+.welcome-inner {
+    padding: 61px 109px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .welcome-image {
+    max-width: 448px;
+    width: 100%;
+  }
+  
+  .welcome-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 549px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  
+  .welcome-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    color: #717171;
+    margin: 4px 0 44px;
+  }
+  
+  .green {
+    color: #499A18;
+  }
+  
+  .welcome-desc {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    margin-bottom: 47px;
+  }
+  
+  .welcome-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+    max-width: 158px;
+    width: 100%;
+    padding: 10px 23px;
+    border: 2px solid #E06733;
+    border-radius: 10px;
+    background-color: #E0673300;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
 
-background: #EDF2EC;
-}
-
+/*
 .welcome-wrap {
     display: flex;
     flex-direction: row-reverse;
@@ -60,24 +174,7 @@ background: #EDF2EC;
     max-width: 690px;
     width: 100%;
     padding-bottom: 60px;
-}
-
-.welcome-image{
-    position: absolute;
-    width: 448.8px;
-    height: 407.36px;
-    left: 109px;
-    top: 62px;
-}
-
-
-.welcome-content{
-position: absolute;
-width: 549px;
-height: 340px;
-left: 782px;
-top: 98px;
-}
+}*/
 
 /* BTN LEARN MORE */
 .welcome-btn{
@@ -90,8 +187,7 @@ top: 394px;
 
 
 /* -------- about -------- */
-.about{}
-
+/*
 .about-wrap {
     display: flex;
     flex-direction: column;
@@ -107,7 +203,8 @@ top: 394px;
     justify-content: center;
     width: 605px;
     padding-left: 10px;
-}
+}*/
+
 .about-image {
     display: flex;
     justify-content: center;
@@ -115,6 +212,40 @@ top: 394px;
     margin-top: 50px;
 }
 
+
+.about-inner {
+    padding: 93px 109px;
+    margin-bottom: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-content {
+    max-width: 605px;
+    width: 100%;
+    padding-right: 20px;
+    margin-top: 4px;
+  }
+  
+  .caption {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin-top: 50px;
+  }
+  
+  .highlight {
+    color: #E06733;
+  }
+  
+  .about-desc {
+    line-height: 30px;
+    margin-top: 37px;
+  }
 
 /* -------- services -------- */
 
