@@ -27,16 +27,11 @@ html {
 
 /*
 
-.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 700px;
-    width: 100%;
-}
 */
 
 /* -------- header -------- */
+
+/*
 .header{
 position: absolute;
 width: 1440px;
@@ -45,10 +40,9 @@ left: 0px;
 top: 0px;
 
 background: #EDF2EC;
-}
+}*/
 
 
-.header-wrapper{}
 
 
 .navbar {
@@ -64,15 +58,23 @@ background: #EDF2EC;
     align-items: center;
   }
 
+  /*
 .logo{
 position: absolute;
 width: 20px;
 height: 20px;
 left: 111px;
 top: 52px;
+}*/
+.logo {
+  padding-left: 20px;
 }
-
-
+.nav-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
   
 
 .burger-menu {
@@ -90,7 +92,7 @@ top: 52px;
     text-decoration: none;
     color: #000000;
   }
-  .link--active {
+  .active {
     color: #E06733;
   }
 
@@ -248,21 +250,75 @@ top: 394px;
   }
 
 /* -------- services -------- */
+.services-wrap {
+  padding: 40px 109px 66px;
+}
 
-.services{}
-.services-wrap{}
-.services-content{}
-.buttons-wrap{}
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1007px;
+  width: 100%;
+}
 
-.wrap-card{}
-.card{}
-.title-desc{}
-.title-card{}
-.disc-card{}
+.services-caption {
+  max-width: 309px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.buttons-wrap {
+  display: flex;
+  align-items: center;
+  max-width: 559px;
+  width: 100%;
+}
+
+.service-button,
+.gardeners-button {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #E06733;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  background-color: #E0673300;
+  cursor: pointer;
+  margin-left: 38px;
+  padding: 11px 40px;
+  max-width: 161px;
+  width: 100%;
+}
+
+.wrap-card{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1222px;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px;
+  max-width: 330px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+
 
 
 
 /* -------- prices -------- */
+
+
+
 .prices{}
 .prices-wrap{}
 .prices-tarif{}
@@ -309,13 +365,50 @@ top: 3740px;
 background: #FFFFFF;
 }
 
-.footer-wrap{}
-.footer-content{}
-.github{}
-.footer-school{}
-.name-school{}
+.footer-wrap {
+  padding: 40px 109px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-.social-media{}
-.social-media-list{}
-.ocial-media-item{}
+.copy-list {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
 
+.copy-item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+  margin-right: 20px;
+}
+
+
+.link {
+  text-decoration: none;
+}
+
+.footer-school {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+}
+
+.social-media-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-item {
+  margin-right: 20px;
+  list-style: none;
+}
